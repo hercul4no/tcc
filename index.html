@@ -1580,7 +1580,10 @@ a {
                 $('#next4').show();
 
             }else{
-
+                
+              life -= 1;
+                console.log(life);
+                howLife(life);
               console.log("Não passou do teste");
               $('#submit4').addClass("btn-danger");
               $('#submit4').text("Tente outra vez");
