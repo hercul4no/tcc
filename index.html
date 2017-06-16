@@ -372,14 +372,45 @@ a {
                       <source src="videos/intro2.mp4" type="video/mp4" >
                    </video>
 
-                      <div class="col-md-offset-5" style="margin-top:18%;">
+                    <!-- add chat -->
+                      <div class="jumbotron col-md-12" style="background-color:white;color:black;border-radius:10px;margin-top:8%;" id="chat" hidden>
+
+                     <div class="col-md-12" style="background-color:#0072C6;color:white;margin-bottom:8px;">
+                           <h2 align="center">Mensagem do Chefe !</h2>
+                     </div>
+                     <div class="col-md-12" style="background-color:#D8DDEF;color:black;border-radius:10px;margin-bottom:10px;">
+                       <h3 align="justify">Você é um bom funcionário na nossa empresa de tecnologia
+                       Ivantech, mas eu quero te fazer uma proposta ousada para testar seus conhecimentos,
+                       em Modelo Entidade Relacionamento, onde você passará por cada andar da empresa e tentará
+                       superar os desafios, você ganhara sua promoção que sempre quis, mas caso você venha a falhar, você sera DEMITIDO!</h3>
+                       <p>
+                         IVAN - PRESIDENTE
+                       </p>
+                     </div>
+
+                     <p><button class="btn btn-success btn-lg " id="aceitarDesafio" role="button">Aceitar Desafio</button></p>
+                   </div>
+                   
+                   
+                    <!-- add chat -->
+                   
+                   
+                   
+                   <div class="col-md-offset-5" style="margin-top:18%;">
                         <h1 id="welcome">BEM VINDO AO GA<b>MER</b></h1>
                         <h4 id="welcome2">
                           jogo sobre entidade relacionamento
                         </h4>
                          <button id="startGame" class="btn-primary iniciar" >Jogar</button>
                       </div>
-
+                      
+                      <div class="jumbotron">
+                        <h1>Menssagem do chefe</h1>
+                        <p>Você é um bom funcionario na nossa empresa </p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                      </div>
+                   
+                   
 
 
 
@@ -1737,13 +1768,17 @@ a {
 
 
           $('#startGame').click(function (e) {
-
             console.log('teste1');
             console.log(life);
             e.preventDefault();
             $('#startGame').hide();
             $('#welcome').hide();
             $('#welcome2').hide();
+            $('#chat').show();
+            $('#p1').css('background-color', '#B0BEC6');
+            $('#p1').css('background-image', 'none');
+            $('#t1').css('background-color', '#B0BEC6');
+            /*
             $('#video1').show();
             $('#menu').show();
             $('#life').show();
@@ -1751,10 +1786,24 @@ a {
             $('#p1').css('background-color', '#B0BEC6');
             $('#p1').css('background-image', 'none');
             $('#t1').css('background-color', '#B0BEC6');
+            */
+           
           })
 
+ 
+          $('#aceitarDesafio').click(function (e) {
+
+              console.log('teste');
+              $('#video1').show();
+              $('#menu').show();
+              $('#life').show();
+              $('#labelPlay').show();
+              $('#p1').css('background-color', '#B0BEC6');
+              $('#p1').css('background-image', 'none');
+              $('#t1').css('background-color', '#B0BEC6');
 
 
+          })
 
 
 
