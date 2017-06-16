@@ -368,7 +368,7 @@ a {
 
                  <section align="center" class="col-md-12"  >
 
-                   <video  id="video1" style="width:100%;height:700px;left:64px;" autoplay class="col-md-10" hidden>
+                   <video  id="video1" style="width:100%;height:700px;left:64px;"  class="col-md-10" hidden>
                       <source src="videos/intro2.mp4" type="video/mp4" >
                    </video>
 
@@ -1202,13 +1202,14 @@ a {
       var myVideo = document.getElementById("video1");
 
        function playPause() {
-          if (myVideo.paused)
+          if (myVideo.paused){
+
               myVideo.play();
               document.getElementById("labelPlay").style.visibility = "hidden";
+            }
           else
               myVideo.pause();
        }
-
 
         function allowDrop(ev)
         {
