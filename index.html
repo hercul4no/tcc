@@ -734,7 +734,7 @@ a {
                 </div>
               <div class="page" id="p5">
                 <section>
-                      <div id="question4" class="col-md-10 question" hidden>
+                     <div id="question4" class="col-md-10 question" hidden>
                             <h1 align="center">4 Desafio</h1>
                             <h3>Leia o texto a seguir.</h3>
                             <h4 id="txt-1" align="justify">Uma Floricultura deseja informatizar suas operações. Inicialmente deseja manter um cadastro de
@@ -766,38 +766,36 @@ a {
                               <p id="block">Desbloqueie essa questao respondendo a letra A</p>
                               <div id="question4B"  style="color:black" hidden>
                                   <div class="col-md-4">
-                                    <input type="text" name="" value="FLORICULTURA" disabled="on">
+                                    <input type="text" name="" value="CLIENTE" disabled="on">
                                   </div>
                                   <div class="col-md-4">
                                     <select id="qst4BA">
                                       <option selected>opções</option>
-                                      <option value="solicita">SOLICITA</option>
-                                      <option value="cadastra">CADASTRA</option>
-                                      <option value="realiza">REALIZA</option>
+                                      <option value="faz">FAZ</option>
+                                      <option value="tem">TEM</option>
                                     </select>
                                   </div>
                                   <div class="col-md-4">
-                                    <input type="text" name="" value="CLIENTE" disabled="on">
+                                    <input type="text" name="" value="COMPRA" disabled="on">
                                   </div>
                                   <p>
                                     .
                                   </p>
                                   <div class="col-md-4">
-                                    <input type="text" name="" value="CLIENTE" disabled="on">
+                                    <input type="text" name="" value="COMPRA" disabled="on">
                                   </div>
                                   <div class="col-md-4">
                                     <select id="qst4BB">
                                       <option selected>opções</option>
-                                      <option value="realiza">REALIZA</option>
-                                      <option value="cadastra">CADASTRA</option>
-                                      <option value="solicita">SOLICITA</option>
+                                      <option value="faz">FAZ</option>
+                                      <option value="tem">TEM</option>
                                     </select>
                                   </div>
                                   <div class="col-md-4">
-                                    <input type="text" name="" value="PEDIDO" disabled="on">
+                                    <input type="text" name="" value="PRODUTO" disabled="on">
                                   </div>
                                   <p>
-                                    .
+                                  <!--  .
                                   </p>
                                   <div class="col-md-4">
                                     <input type="text" name="" value="CLIENTE" disabled="on">
@@ -807,13 +805,14 @@ a {
                                       <option selected>opções</option>
                                       <option value="cadastra">CADASTRA</option>
                                       <option value="solicita">SOLICITA</option>
-                                      <option value="realiza">COMPRA</option>
+                                      <option value="realiza">REALIZA</option>
                                     </select>
                                   </div>
                                   <div class="col-md-4">
                                     <input type="text" name="" value="PRODUTO" disabled="on">
                                   </div>
                                   <p>
+                                    .-->
                                     .
                                   </p>
                                   <div class="row" style="margin-left:100px;" id="form4" >
@@ -1493,10 +1492,10 @@ a {
             $('#plusEntidade').click(function () {
 
 
-              var entidadeField = $('#entidadeField').val();
+               var entidadeField = $('#entidadeField').val();
               entidadeField.toLowerCase();
 
-              if(entidadeField == 'floricultura' || entidadeField == 'produtos'  || entidadeField == 'clientes'){
+              if(entidadeField == 'compra' || entidadeField == 'produto'  || entidadeField == 'cliente'){
 
                   if(entidades.length < 1){
                       entidades.push(entidadeField);
@@ -1567,11 +1566,11 @@ a {
 
     $('#submit4').click(function () {
 
-             var qst1 = $('#qst4BA').val();
+              var qst1 = $('#qst4BA').val();
              var qst2 = $('#qst4BB').val();
-             var qst3 = $('#qst4BC').val();
+             //var qst3 = $('#qst4BC').val();
 
-             if(qst1 == 'cadastra' && qst2 == 'solicita' && qst3 == 'realiza'){
+             if(qst1 == 'faz' && qst2 == 'tem'){
 
                 $('#myModal4').modal('show');
                 console.log("Passou do teste");
@@ -1582,16 +1581,12 @@ a {
                 $('#next4').show();
 
             }else{
-                
-              life -= 1;
-                console.log(life);
-                howLife(life);
+
               console.log("Não passou do teste");
               $('#submit4').addClass("btn-danger");
               $('#submit4').text("Tente outra vez");
 
             }
-
 
           })
 
