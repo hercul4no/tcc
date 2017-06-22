@@ -508,6 +508,8 @@ a {
                         <option value="atributoChave">Atributo Chave</option>
                         <option value="atributoMulti">Atributo Multivalorado</option>
                         <option value="dependencia">Dependencia</option>
+                        <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                        <option value="entidadeFraca">Entidade Fraca</option>
                       </select>
                     </div>
                     <div class="col-xs-5 col-md-2">
@@ -523,6 +525,8 @@ a {
                         <option value="atributoChave">Atributo Chave</option>
                         <option value="atributoMulti">Atributo Multivalorado</option>
                         <option value="dependencia">Dependencia</option>
+                        <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                        <option value="entidadeFraca">Entidade Fraca</option>
                       </select>
                     </div>
                     <div class="col-xs-5 col-md-2">
@@ -538,6 +542,8 @@ a {
                         <option value="atributoChave">Atributo Chave</option>
                         <option value="atributoMulti">Atributo Multivalorado</option>
                         <option value="dependencia">Dependencia</option>
+                        <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                        <option value="entidadeFraca">Entidade Fraca</option>
                       </select>
                     </div>
 
@@ -555,6 +561,8 @@ a {
                         <option value="atributoChave">Atributo Chave</option>
                         <option value="atributoMulti">Atributo Multivalorado</option>
                         <option value="dependencia">Dependencia</option>
+                        <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                        <option value="entidadeFraca">Entidade Fraca</option>
                       </select>
                     </div>
                     <!-- fim novo -->
@@ -575,6 +583,8 @@ a {
                       <option value="atributoChave">Atributo Chave</option>
                       <option value="atributoMulti">Atributo Multivalorado</option>
                       <option value="dependencia">Dependencia</option>
+                      <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                      <option value="entidadeFraca">Entidade Fraca</option>
                     </select>
                   </div>
                   <div class="col-xs-5 col-md-2">
@@ -590,13 +600,15 @@ a {
                       <option value="atributoChave">Atributo Chave</option>
                       <option value="atributoMulti">Atributo Multivalorado</option>
                       <option value="dependencia">Dependencia</option>
+                      <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                      <option value="entidadeFraca">Entidade Fraca</option>
                     </select>
                   </div>
 
-
+                  
                   <div class="col-xs-5 col-md-2">
                     <a href="#" class="thumbnail">
-                      <img src="png/entidadeAssoc.svg" alt="...">
+                      <img src="png/idRelacionamento.svg" alt="...">
                     </a>
                     <select id="qst6">
                       <option value="entidade">Entidade</option>
@@ -607,13 +619,15 @@ a {
                       <option value="atributoChave">Atributo Chave</option>
                       <option value="atributoMulti">Atributo Multivalorado</option>
                       <option value="dependencia">Dependencia</option>
+                      <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                      <option value="entidadeFraca">Entidade Fraca</option>
                     </select>
                   </div>
 
                   <!--novo -->
                   <div class="col-xs-5 col-md-2">
                     <a href="#" class="thumbnail">
-                      <img src="png/dependencia.svg" alt="...">
+                      <img src="png/entidadeFraca.svg" alt="...">
                     </a>
                     <select id="qstNv2">
                       <option value="entidade">Entidade</option>
@@ -624,6 +638,8 @@ a {
                       <option value="atributoChave">Atributo Chave</option>
                       <option value="atributoMulti">Atributo Multivalorado</option>
                       <option value="dependencia">Dependencia</option>
+                      <option value="idRelacionamento">Indetificador de Relacionamento</option>
+                      <option value="entidadeFraca">Entidade Fraca</option>
                     </select>
                   </div>
                   <!-- fim novo -->
@@ -1386,9 +1402,9 @@ a {
               qst3 == 'atributo'&&
               qst4 == 'especializacao'&&
               qst5 == 'atributoChave'&&
-              qst6 == 'entidadeAssoc' &&
+              qst6 == 'idRelacionamento' &&
               qstNv1 == 'atributoMulti' &&
-              qstNv2 == 'dependencia'){
+              qstNv2 == 'entidadeFraca'){
 
                   $('#myModal2').modal('show');
                   console.log("Passou do teste");
